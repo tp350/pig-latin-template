@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PigLatinTranslator",
+            "request": "launch",
+            "mainClass": "PigLatinTranslator",
+            "projectName": "pig-latin-template_2ab430a4"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
