@@ -5,9 +5,10 @@ public class PigLatinTranslator {
   // Translate a book object (you can add your translation logic for the book here)
   public static Book translate(Book input) {
     Book translatedBook = new Book();
-    // Placeholder: implement code to translate the book, such as iterating over each line and translating.
-    // For example, translating the content of the book into Pig Latin line by line.
-    translatedBook.printlines(0, 10);  // This is just an example.
+    for(int i =0; i < input.getLineCount();i++){
+      String line = translate(input.getLine(i));
+      translatedBook.appendLine(line);
+    }
     return translatedBook;
   }
 
